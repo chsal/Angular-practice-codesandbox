@@ -2,9 +2,10 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
 import { AppComponent } from "./app.component";
+import { todos } from "./conpoments/todos/todos.component";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, todos],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent]
