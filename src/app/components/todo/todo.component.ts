@@ -17,4 +17,13 @@ export class todo implements OnInit {
     };
     return classes;
   }
+
+  onToggle(todoDataToToggle) {
+    console.log("toggle");
+    todoDataToToggle.completed = !todoDataToToggle.completed;
+  }
+
+  onDelete(todoDataToDelete) {
+    console.log("delete");
+  }
 }
