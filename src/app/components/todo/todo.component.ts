@@ -9,4 +9,12 @@ import { todoModel } from "../../models/todoModel";
 export class todo implements OnInit {
   @Input() todoData: todoModel;
   ngOninit() {}
+
+  setClasses() {
+    let classes = {
+      todo: true,
+      "is-complete": this.todoData.completed
+    };
+    return classes;
+  }
 }

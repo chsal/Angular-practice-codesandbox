@@ -21,7 +21,7 @@ export class todos implements OnInit {
       {
         id: 2,
         title: "test2",
-        completed: false
+        completed: true
       }
     ];
   }
