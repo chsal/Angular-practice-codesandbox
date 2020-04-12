@@ -17,4 +17,8 @@ export class todos implements OnInit {
       this.todoItems = todos;
     });
   }
+
+  deleteTodo(todoToDelete: todoModel) {
+    console.log(todoToDelete);
+  }
 }

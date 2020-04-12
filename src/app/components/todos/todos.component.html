@@ -1,1 +1,6 @@
-<todo *ngFor="let todoItem of todoItems" [todoData]="todoItem"> </todo>
+<todo
+  *ngFor="let todoItem of todoItems"
+  [todoData]="todoItem"
+  (todoDeleter)="deleteTodo($event)"
+>
+</todo>
