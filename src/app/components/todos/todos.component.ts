@@ -23,4 +23,8 @@ export class todos implements OnInit {
     this.todoItems = this.todoItems.filter(t => t.id !== todoToDelete.id);
     this.todoService.deleteTodo(todoToDelete).subscribe();
   }
+
+  addTodo(todoToAdd: any) {
+    this.todoService.addTodo(todoToAdd).subscribe(t => this.todoItems.push(t));
+  }
 }

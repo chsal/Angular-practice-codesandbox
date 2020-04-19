@@ -1,4 +1,4 @@
-<add-todo> </add-todo>
+<add-todo (todoAdder)="addTodo($event)"> </add-todo>
 <todo
   *ngFor="let todoItem of todoItems"
   [todoData]="todoItem"
