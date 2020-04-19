@@ -8,10 +8,16 @@ import { todos } from "./components/todos/todos.component";
 import { todo } from "./components/todo/todo.component";
 import { header } from "./components/layout/header/header.component";
 import { addTodo } from "./components/add-todo/add-todo.component";
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   declarations: [AppComponent, todos, todo, header, addTodo],
-  imports: [BrowserModule, HttpClientModule, FormsModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    RouterModule.forRoot([{ path: "", component: todos }])
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
